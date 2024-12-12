@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:H12Oef4ReactionSpeed"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-
+        <Label Content="Klik zo snel mogelijk op het monster" HorizontalAlignment="Left" Margin="46,43,0,0" VerticalAlignment="Top" Width="202"/>
+        <Button x:Name="startButton" Content="Start" HorizontalAlignment="Left" Margin="82,92,0,0" VerticalAlignment="Top" Width="65" Click="startButton_Click"/>
+        <Button x:Name="imageButton" Height="305" Margin="373,43,0,0" VerticalAlignment="Top" Width="358" Background="Transparent" Foreground="Transparent" BorderBrush="Transparent"  Click="imageButton_Click">
+            <Image x:Name="image" HorizontalAlignment="Left" Height="305" VerticalAlignment="Top" Width="358" Stretch="Fill"/>
+        </Button>
+        <Label Content="Scores (speler: tijd)" HorizontalAlignment="Left" Margin="68,169,0,0" VerticalAlignment="Top" Width="133" FontWeight="Bold"/>
+        <Label x:Name="resultLabel" Content="" HorizontalAlignment="Left" Height="214" Margin="65,200,0,0" VerticalAlignment="Top" Width="272"/>
+        <Label x:Name="dateTimeLabel" Content="" HorizontalAlignment="Left" Margin="452,375,0,0" VerticalAlignment="Top" Width="281" Height="39"/>
     </Grid>
 </Window>
